@@ -1,9 +1,14 @@
 import React from 'react'
 import videoTrabajo from '../images/VIDEO JARRON.mp4'
 import Premios from './Premios'
+import { motion } from 'framer-motion'
 const Trabajo = () => {
   return (
-    <>
+    <motion.div
+    initial={{width: 0}}
+    animate={{width: "100%"}}
+    exit={{x: window.innerWidth, transition: {duration: 0.1}}}
+    >
         <div className='container-eco'>
             <div className='eco-botellas'>
                 <h2>ECO <span className='verde'>BOTELLAS</span></h2>
@@ -37,7 +42,7 @@ const Trabajo = () => {
         </section>
         <div className='centrar'><div className='rectangulo-trabajo'></div></div>
         <Premios/>
-    </>
+    </motion.div>
   )
 }
 

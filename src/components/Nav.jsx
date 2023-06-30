@@ -15,13 +15,19 @@ const Nav = () => {
       setLogo(logoHome);
     } else if (location.pathname === '/nosotros') {
       setLogo(logo2);}
+      else if (location.pathname === '/unite') {
+        setLogo(logo2);}
+      else if (location.pathname === '/trabajo') {
+        setLogo(logo2);}
   }, [location]);
 
   
   return (
     <>
       <div className={`barra-nav ${isHome ? '' : 'nav-other'}`}>
-        <img src={logo} alt='' />
+        <Link to='/'>
+         <img src={logo} alt='' />
+        </Link>
         <button onClick={() => setClase('nav visible')} className='abrir-menu'>
           <i className='bi bi-list'></i>
         </button>

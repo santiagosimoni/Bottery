@@ -2,9 +2,14 @@ import React from 'react'
 import imagenfondo from '../images/imagenjarron.jpg'
 import botellas from '../images/VIDEO INICIATIVA.mp4'
 import Iniciativas from './Iniciativas'
+import { motion } from 'framer-motion'
 const Nosotros = () => {
   return (
-    <>
+    <motion.div
+    initial={{width: 0}}
+    animate={{width: "100%"}}
+    exit={{x: window.innerWidth, transition: {duration: 0.1}}}
+    >
       <section className='container-nosotros'>
         <div className='nosotros'>
           <h2>SOMOS <span className='verde'>BOTTERY</span></h2>
@@ -22,11 +27,11 @@ const Nosotros = () => {
           <button>Visitar</button>
         </div>
       </section>
-      <div className='container-mision'>
+      <div className='container-botellas-video'>
             <video muted autoPlay loop src={botellas}></video>
         </div>
       <Iniciativas/>
-    </>
+    </motion.div>
   )
 }
 

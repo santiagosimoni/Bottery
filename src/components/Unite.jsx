@@ -1,9 +1,14 @@
 import React from 'react'
 import videoCocina from '../images/VIDEO COCINA.mp4'
 import Formulario from './Formulario'
+import { motion } from 'framer-motion'
 const Unite = () => {
   return (
-    <>
+    <motion.div
+    initial={{width: 0}}
+    animate={{width: "100%"}}
+    exit={{x: window.innerWidth, transition: {duration: 0.1}}}
+    >
         <section className='container-cambio'>
             <div className='cambio'>
               <h2>UNÍTE <span className='verde'>AL CAMBIO</span></h2>
@@ -16,7 +21,7 @@ const Unite = () => {
             <video muted autoPlay loop src={videoCocina}></video>
         </div>
         <Formulario/>
-    </>
+    </motion.div>
   )
 }
 

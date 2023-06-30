@@ -2,10 +2,15 @@ import React from 'react'
 import video from '../images/VIDEO BOTTERY INICIO.mp4'
 import Info from './Info'
 import Mision from './Mision'
+import { motion } from 'framer-motion'
 const Inicio = () => {
   
   return (
-    <div>  
+    <motion.div
+    initial={{width: 0}}
+    animate={{width: "100%"}}
+    exit={{x: window.innerWidth, transition: {duration: 0.1}}}
+    >  
       <div className='container-reciclar'>
         <video muted autoPlay loop src={video}></video>
         <div className='container-texto-reciclar'>
@@ -16,7 +21,7 @@ const Inicio = () => {
     <Info/>
     <div className='borde-verde'></div>
     <Mision/>
-  </div>
+  </motion.div>
   )
 }
 
