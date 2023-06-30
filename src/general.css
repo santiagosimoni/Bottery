@@ -1,0 +1,616 @@
+@font-face {
+  font-family: Rustic;
+  src: url("./fonts/Rustic Printed Stamp.otf") format("opentype");
+}
+@font-face {
+  font-family: Future;
+  src: url("./fonts/FuturaBookBT.ttf");
+}
+@font-face {
+  font-family: Garamond;
+  src: url("./fonts/EBGaramond-Regular.ttf");
+}
+.verde {
+  color: #00A859;
+}
+
+.borde-verde {
+  height: 2rem;
+  background-color: #00A859;
+}
+
+.imagenesFondo {
+  margin-bottom: 5rem;
+}
+.imagenesFondo img {
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
+}
+
+.container-mision {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 8rem;
+}
+.container-mision video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.barra-nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin-bottom: 5rem;
+  z-index: 1;
+  width: 100%;
+}
+.barra-nav img {
+  max-width: 8rem;
+}
+.barra-nav .abrir-menu, .barra-nav .cerrar-menu {
+  display: none;
+}
+.barra-nav .nav-list {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+.barra-nav .nav-list li a {
+  font-family: Future;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-other {
+  position: relative;
+}
+.nav-other img {
+  width: 5rem;
+}
+.nav-other .nav-list li a {
+  color: #00A859;
+}
+
+@media (max-width: 780px) {
+  .barra-nav .abrir-menu, .barra-nav .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .barra-nav .cerrar-menu {
+    color: black;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  .barra-nav .nav {
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #00A859;
+    padding: 1rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+  .barra-nav .nav .nav-list {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .barra-nav .nav .nav-list li {
+    display: flex;
+  }
+  .barra-nav .nav .nav-list li a {
+    padding: 1rem;
+  }
+  .barra-nav .nav .nav-list li a:hover {
+    transition: 0.2s;
+    color: #00A859;
+    background-color: white;
+  }
+  .barra-nav .visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-other .abrir-menu, .nav-other .cerrar-menu {
+    color: black;
+  }
+  .nav-other .nav-list li a {
+    color: white;
+  }
+}
+.container-reciclar {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.container-reciclar video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-reciclar .container-texto-reciclar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container-reciclar .container-texto-reciclar h2 {
+  font-family: Rustic;
+  line-height: 6rem;
+  letter-spacing: 0.5rem;
+  color: rgb(255, 255, 255);
+  font-size: 6rem;
+}
+
+.container-info {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container-info .info {
+  margin: 3rem;
+}
+.container-info .info h2 {
+  font-size: 5rem;
+  font-family: Future;
+  color: #00A859;
+}
+.container-info .info h3 {
+  width: 15rem;
+  font-family: Future;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.container-texto-mision {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container-texto-mision h2 {
+  text-transform: uppercase;
+  font-family: Rustic;
+  letter-spacing: 1rem;
+  color: rgb(255, 255, 255);
+  font-size: 6rem;
+}
+
+.mision-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  flex-direction: column;
+}
+.mision-info .mision {
+  margin: 2rem;
+}
+.mision-info .mision h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: Future;
+}
+.mision-info .mision h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: Garamond;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 850px) {
+  .container-reciclar .container-texto-reciclar h2 {
+    line-height: 4rem;
+    font-size: 4rem;
+  }
+  .container-info {
+    flex-direction: column;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+  .container-info .info {
+    margin-top: 5rem;
+  }
+  .container-mision .container-texto-mision h2 {
+    font-size: 4rem;
+  }
+}
+.container-footer {
+  margin-top: 10rem;
+  background-color: #00A859;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+.container-footer .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container-footer .footer .logo {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-right: 4rem;
+}
+.container-footer .footer .logo h2 {
+  font-size: 1.2rem;
+  color: white;
+  font-family: Future;
+}
+.container-footer .footer .logo img {
+  width: 5rem;
+}
+.container-footer .container-redes .redes {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.container-footer .container-redes .redes p {
+  color: white;
+  font-family: Future;
+}
+.container-footer .container-redes .redes i {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.container-nosotros {
+  margin: 4rem 2rem 8rem 2rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.container-nosotros .nosotros {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container-nosotros .nosotros h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: Future;
+}
+.container-nosotros .nosotros p {
+  text-align: center;
+  width: 75%;
+  font-family: Garamond;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.container-blog {
+  margin: 15rem 2rem 15rem 2rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.container-blog .blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container-blog .blog h2 {
+  margin: 1rem;
+  font-size: 2rem;
+  font-family: Future;
+  text-align: center;
+}
+.container-blog .blog p {
+  width: 20rem;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.container-blog .blog button {
+  margin: 1rem;
+  border: none;
+  border-radius: 60px;
+  background: #00A859;
+  font-size: 1.3rem;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  width: 12rem;
+  cursor: pointer;
+}
+
+.botellas {
+  width: 100%;
+}
+.botellas video {
+  width: 100%;
+}
+
+.container-iniciativa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 5rem;
+}
+.container-iniciativa .iniciativa {
+  margin: 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.container-iniciativa .iniciativa h2 {
+  font-size: 2.5rem;
+  font-family: Future;
+  margin-bottom: 2.5rem;
+}
+.container-iniciativa .iniciativa .texto-iniciativa {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.container-iniciativa .iniciativa .texto-iniciativa p {
+  font-family: Garamond;
+  font-size: 1.5rem;
+}
+.container-iniciativa .iniciativa .vistazo {
+  font-family: Garamond;
+  font-size: 1.5rem;
+}
+
+.imagenes-iniciativa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagenes-iniciativa .container-imagenes-nosotros {
+  display: flex;
+  gap: 5rem;
+}
+.imagenes-iniciativa .container-imagenes-nosotros .imagenes-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 50%;
+}
+.imagenes-iniciativa .container-imagenes-nosotros .imagenes-nosotros .imagen-circular {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.imagenes-iniciativa .container-imagenes-nosotros .imagenes-nosotros img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imagenes-iniciativa .container-imagenes-nosotros .imagenes-nosotros p {
+  font-family: Future;
+}
+
+@media screen and (max-width: 780px) {
+  .container-nosotros .nosotros p {
+    text-align: center;
+    width: 100%;
+    font-family: Garamond;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .container-blog {
+    margin: 10rem 2rem 10rem 2rem;
+  }
+  .container-iniciativa {
+    margin: 1rem;
+  }
+  .container-iniciativa .iniciativa {
+    margin: 2rem;
+  }
+  .imagenes-iniciativa .container-imagenes-nosotros {
+    flex-direction: column;
+  }
+}
+.container-cambio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.container-cambio .cambio {
+  text-align: center;
+}
+.container-cambio .cambio h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-family: Future;
+}
+.container-cambio .cambio p {
+  font-size: 1.5rem;
+}
+
+.container-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container-contacto .contacto {
+  margin-bottom: 1.5rem;
+}
+.container-contacto .contacto h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-family: Future;
+}
+.container-contacto .contacto p {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.container-form {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container-form form p {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 780px) {
+  .container-cambio .cambio p {
+    width: 20rem;
+    font-size: 1.5rem;
+  }
+}
+.container-eco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.container-eco .eco-botellas {
+  margin: 2rem;
+}
+.container-eco .eco-botellas h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-family: Future;
+}
+.container-eco .eco-botellas p {
+  width: 50rem;
+  font-size: 1.5rem;
+  font-family: Garamond;
+}
+
+.container-beneficios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.container-beneficios h2 {
+  font-size: 2.5rem;
+  font-family: Future;
+}
+.container-beneficios .beneficios {
+  margin-top: 2rem;
+}
+.container-beneficios .beneficios .beneficio {
+  margin: 3rem;
+  text-align: center;
+  font-family: Future;
+}
+.container-beneficios .beneficios .beneficio .titulo-benef {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.container-beneficios .beneficios .beneficio p {
+  font-family: Future;
+  width: 20rem;
+}
+
+.centrar {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centrar .rectangulo-trabajo {
+  border-radius: 10px;
+  background-color: #00A859;
+  height: 0.4rem;
+  width: 50%;
+}
+
+.container-premios {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container-premios h2 {
+  font-size: 2.5rem;
+  font-family: Future;
+  margin-bottom: 3rem;
+}
+.container-premios .premios {
+  width: 80%;
+  margin: 3rem;
+}
+.container-premios .premios .info-premios {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.container-premios .premios .info-premios h3 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  font-family: Garamond;
+}
+.container-premios .premios .info-premios p {
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  margin-bottom: 2rem;
+}
+.container-premios .premios .info-premios img {
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 820px) {
+  .container-premios .premios {
+    width: 100%;
+  }
+  .container-eco .eco-botellas p {
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: Garamond;
+  }
+}
+
+/*# sourceMappingURL=general.css.map */

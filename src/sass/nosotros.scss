@@ -1,0 +1,162 @@
+.container-nosotros{
+    margin: 4rem 2rem 8rem 2rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    .nosotros{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-family: Future;
+        }
+        p{
+            text-align: center;
+            width: 75%;
+            font-family: Garamond;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+}
+.container-blog{
+    margin: 15rem 2rem 15rem 2rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    .blog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        h2{
+            margin: 1rem;
+            font-size: 2rem;
+            font-family: Future;
+            text-align: center;
+        }
+        p{
+            width: 20rem;
+            font-size: 1.5rem;
+            margin: 1rem;
+        }
+        button{
+            margin: 1rem;
+            border: none;
+            border-radius: 60px;
+            background: $color-primario;
+            font-size: 1.3rem;
+            color: white;
+            text-transform: uppercase;
+            padding: 0.5rem;
+            width: 12rem;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.botellas{
+    width: 100%;
+    video{
+        width: 100%;
+    }
+}
+
+.container-iniciativa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5rem;
+    .iniciativa{
+        margin: 4rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        h2{
+            font-size: 2.5rem;
+            font-family: Future;
+            margin-bottom: 2.5rem;
+        }
+        .texto-iniciativa{
+            margin-bottom: 2rem;
+            text-align: center;
+            p{
+                font-family: Garamond;
+                font-size: 1.5rem;
+            }
+        }
+        .vistazo{
+            font-family: Garamond;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.imagenes-iniciativa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container-imagenes-nosotros{
+        display: flex;
+        gap: 5rem;
+        .imagenes-nosotros{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            border-radius: 50%;
+            .imagen-circular {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                overflow: hidden;
+              }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            p{
+                font-family: Future;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:780px){
+    .container-nosotros{
+        .nosotros{
+            p{
+                text-align: center;
+                width: 100%;
+                font-family: Garamond;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+
+    .container-blog{
+        margin: 10rem 2rem 10rem 2rem;
+    }
+
+    .container-iniciativa{
+        margin: 1rem;
+        .iniciativa{
+            margin: 2rem;
+        }
+    }
+    .imagenes-iniciativa{
+        .container-imagenes-nosotros{
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,124 @@
+
+.container-reciclar{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .container-texto-reciclar{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        h2{
+            font-family: Rustic;
+            line-height: 6rem;
+            letter-spacing: 0.5rem;
+            color: rgba(255, 255, 255, 1);
+            font-size: 6rem;
+        }
+    }
+}
+
+
+
+.container-info{
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .info{
+        margin: 3rem;
+        h2{
+            font-size: 5rem;
+            font-family: Future;
+            color: $color-primario;
+        }
+        h3{
+            width: 15rem;
+            font-family: Future;
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+.container-texto-mision{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        h2{
+            text-transform: uppercase;
+            font-family: Rustic;
+            letter-spacing: 1rem;
+            color: rgba(255, 255, 255, 1);
+            font-size: 6rem;
+        }
+}
+
+.mision-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    .mision{
+        margin: 2rem;
+        h2{
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-family: Future;
+        }
+        h3{
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: Garamond;
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (max-width:850px){
+
+    
+.container-reciclar{
+    .container-texto-reciclar{
+        h2{
+            line-height: 4rem;
+            font-size: 4rem;
+        }
+    }
+}
+
+
+
+    .container-info{
+        flex-direction: column;
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+        .info{
+            margin-top: 5rem;
+        }
+        }
+
+.container-mision{
+    .container-texto-mision{
+        h2{
+            font-size: 4rem;
+        }
+    }
+}
+}
+
