@@ -10,7 +10,7 @@ const Formulario = () => {
             </div>
         </section>
         <div className='container-form'>
-            <form action="https://formsubmit.co/santiagosimoni24@gmail.com" method="POST">
+            <form action="https://formsubmit.co/hola.bottery@gmail.com" method="POST">
                     <div className='form'>
                         <label><span>Nombre</span></label>
                         <input type="text" name="fullname" required/>
@@ -21,7 +21,7 @@ const Formulario = () => {
                     </div>
                     <div className='form'>
                         <label><span>Teléfono</span></label>
-                        <input type="email" name="email" required/>
+                        <input type="text" name="teléfono" required/>
                     </div>
                     <div className='form'>
                        <label><span>Mensaje</span></label> 
@@ -30,7 +30,7 @@ const Formulario = () => {
                         <button className='boton-form'>
                             Enviar
                         </button>
-                    <input type="hidden" name='_next' value="https://santiagosimoni.netlify.app" />
+                    <input type="hidden" name='_next' value="https://calm-biscuit-5cc2d9.netlify.app/" />
                     <input type="hidden" name='_captcha' value="false" />
                 </form>
         </div>
