@@ -12,6 +12,7 @@
             font-family: Future;
         }
         p{
+            font-family: Garamond;
             font-size: 1.5rem;
         }
     }
@@ -25,12 +26,12 @@
     .contacto{
         margin-bottom: 1.5rem;
         h2{
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             font-size: 2.5rem;
-            font-family: Future;
+            font-family: FutureHV;
         }
         p{
-            margin: 0.5rem;
+            font-family: Garamond;
             font-size: 1.5rem;
         }
     }
@@ -45,18 +46,102 @@
     align-items: center;
     text-align: center;
     form{
-        p{
+        input{
+            border: 1px solid $color-primario;
+            border-radius: 5px;          
+            width: 50rem;
+            height: 3rem;
+        }
+        label{
+            display: flex;
+            padding: 0.5rem 0rem 0.5rem 1rem;
+            span{
+                position: absolute;
+                background-color: white;
+                width: 5rem;
+                font-size: 1rem;
+                font-family: Garamond;
+                font-style: normal;
+                font-weight: bold;
+                line-height: 1rem;
+            }
+        }
+        .form{
             margin: 1rem;
         }
     }
+    .boton-form{
+        margin-top: 2rem;
+        background-color: $color-primario;
+        padding: 1rem;
+        color: white;
+        width: 12rem;
+        font-family: FutureHV;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 30px;
+        cursor: pointer;
+    }
 }
 
-@media screen and (max-width:780px){
+@media screen and (max-width:850px){
     .container-cambio{
         .cambio{
             p{
                 width: 20rem;
                 font-size: 1.5rem;
+            }
+        }
+    }
+    .container-contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .contacto{
+            margin-bottom: 1.5rem;
+            h2{
+                margin-bottom: 1rem;
+                font-size: 2.5rem;
+                font-family: FutureHV;
+            }
+            p{
+                font-family: Garamond;
+                font-size: 1.5rem;
+            }
+        }
+        
+    }
+    
+    
+    .container-form{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form{
+            input{
+                border: 1px solid $color-primario;
+                border-radius: 10px;          
+                width: 20rem;
+                height: 5rem;
+            }
+            label{
+                display: flex;
+                padding: 0.5rem 0rem 0.5rem 1rem;
+                span{
+                    position: absolute;
+                    background-color: white;
+                    width: 5rem;
+                    font-size: 1rem;
+                    font-family: Garamond;
+                    font-style: normal;
+                    font-weight: bold;
+                    line-height: 1rem;
+                }
+            }
+            .form{
+                margin: 2rem;
             }
         }
     }

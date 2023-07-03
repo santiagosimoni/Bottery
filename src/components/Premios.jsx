@@ -27,10 +27,10 @@ const Premios = () => {
     <>
         <section className='container-premios'>
             <div className='premios'>
-            <h2>NUESTROS <span className='verde'>PREMIOS</span></h2>
+            <h2>NUESTROS <span className='verde-titulo'>PREMIOS</span></h2>
             {logros?.map((p)=>(
                 <div className='info-premios' key={p.id}>
-                    <h3 className='verde'>{p.titulo}</h3>
+                    <h3 className='verde-titulo'>{p.titulo}</h3>
                     <p>{p.texto}</p>
                     <img src={p.img} alt="" />
                 </div>

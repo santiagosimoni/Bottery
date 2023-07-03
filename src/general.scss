@@ -9,12 +9,21 @@
     font-family: Garamond;
     src: url('./fonts/EBGaramond-Regular.ttf');
 }
+@font-face {
+    font-family: FutureHV ;
+    src: url('./fonts/Futura Heavy font.ttf');
+}
 $background: #373435;
 $color-primario: #00A859;
 
 
 .verde{
     color: $color-primario;
+    font-weight: bold;
+}
+.verde-titulo{
+    color: $color-primario;
+    font-family: FutureHV;
 }
 .borde-verde{
     height: 2rem;
@@ -44,7 +53,6 @@ $color-primario: #00A859;
         object-fit:cover;
     }
 }
-
 *{
     padding: 0;
     margin: 0;

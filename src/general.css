@@ -10,8 +10,18 @@
   font-family: Garamond;
   src: url("./fonts/EBGaramond-Regular.ttf");
 }
+@font-face {
+  font-family: FutureHV;
+  src: url("./fonts/Futura Heavy font.ttf");
+}
 .verde {
   color: #00A859;
+  font-weight: bold;
+}
+
+.verde-titulo {
+  color: #00A859;
+  font-family: FutureHV;
 }
 
 .borde-verde {
@@ -72,7 +82,7 @@
   gap: 2rem;
 }
 .barra-nav .nav-list li a {
-  font-family: Future;
+  font-family: FutureHV;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
@@ -103,6 +113,7 @@
     margin-bottom: 2rem;
   }
   .barra-nav .nav {
+    overflow: hidden;
     z-index: 2;
     opacity: 0;
     visibility: hidden;
@@ -186,7 +197,7 @@
 }
 .container-info .info h2 {
   font-size: 5rem;
-  font-family: Future;
+  font-family: FutureHV;
   color: #00A859;
 }
 .container-info .info h3 {
@@ -220,7 +231,7 @@
   flex-direction: column;
 }
 .mision-info .mision {
-  margin: 2rem;
+  margin: 4rem;
 }
 .mision-info .mision h2 {
   font-size: 2.5rem;
@@ -232,6 +243,7 @@
   font-size: 1.5rem;
   font-family: Garamond;
   font-weight: 500;
+  width: 100%;
 }
 
 @media screen and (max-width: 850px) {
@@ -271,7 +283,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-right: 4rem;
+  margin-right: 12rem;
 }
 .container-footer .footer .logo h2 {
   font-size: 1.2rem;
@@ -295,6 +307,44 @@
   color: white;
 }
 
+@media (max-width: 780px) {
+  .container-footer {
+    margin-top: 10rem;
+    background-color: #00A859;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+  }
+  .container-footer .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container-footer .footer .logo {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-right: 2rem;
+  }
+  .container-footer .container-redes .redes {
+    margin-right: 1rem;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .container-footer .container-redes .redes p {
+    color: white;
+    font-family: Future;
+  }
+  .container-footer .container-redes .redes i {
+    font-size: 1.2rem;
+    color: white;
+  }
+}
 .container-nosotros {
   margin: 4rem 2rem 8rem 2rem;
   display: flex;
@@ -373,7 +423,7 @@
   margin: 5rem;
 }
 .container-iniciativa .iniciativa {
-  margin: 4rem;
+  margin: 4rem 8rem 4rem 8rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -464,6 +514,7 @@
   font-family: Future;
 }
 .container-cambio .cambio p {
+  font-family: Garamond;
   font-size: 1.5rem;
 }
 
@@ -477,12 +528,12 @@
   margin-bottom: 1.5rem;
 }
 .container-contacto .contacto h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 2.5rem;
-  font-family: Future;
+  font-family: FutureHV;
 }
 .container-contacto .contacto p {
-  margin: 0.5rem;
+  font-family: Garamond;
   font-size: 1.5rem;
 }
 
@@ -493,14 +544,93 @@
   align-items: center;
   text-align: center;
 }
-.container-form form p {
+.container-form form input {
+  border: 1px solid #00A859;
+  border-radius: 5px;
+  width: 50rem;
+  height: 3rem;
+}
+.container-form form label {
+  display: flex;
+  padding: 0.5rem 0rem 0.5rem 1rem;
+}
+.container-form form label span {
+  position: absolute;
+  background-color: white;
+  width: 5rem;
+  font-size: 1rem;
+  font-family: Garamond;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1rem;
+}
+.container-form form .form {
   margin: 1rem;
 }
+.container-form .boton-form {
+  margin-top: 2rem;
+  background-color: #00A859;
+  padding: 1rem;
+  color: white;
+  width: 12rem;
+  font-family: FutureHV;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 30px;
+  cursor: pointer;
+}
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 850px) {
   .container-cambio .cambio p {
     width: 20rem;
     font-size: 1.5rem;
+  }
+  .container-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .container-contacto .contacto {
+    margin-bottom: 1.5rem;
+  }
+  .container-contacto .contacto h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-family: FutureHV;
+  }
+  .container-contacto .contacto p {
+    font-family: Garamond;
+    font-size: 1.5rem;
+  }
+  .container-form {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-form form input {
+    border: 1px solid #00A859;
+    border-radius: 10px;
+    width: 20rem;
+    height: 5rem;
+  }
+  .container-form form label {
+    display: flex;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+  }
+  .container-form form label span {
+    position: absolute;
+    background-color: white;
+    width: 5rem;
+    font-size: 1rem;
+    font-family: Garamond;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1rem;
+  }
+  .container-form form .form {
+    margin: 2rem;
   }
 }
 .container-eco {
@@ -549,8 +679,7 @@
   text-transform: uppercase;
 }
 .container-beneficios .beneficios .beneficio p {
-  font-family: Future;
-  width: 20rem;
+  font-family: FutureHV;
 }
 
 .centrar {

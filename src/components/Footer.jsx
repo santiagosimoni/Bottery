@@ -8,7 +8,6 @@ const Footer = () => {
         <div className='footer' id='#abajo'>
             <div className='logo'>
                 <img src={logo} alt="" />
-                <h2>Visitá nuestras redes</h2>
             </div>
             <div className='container-redes'>
                 <div className='redes'>
@@ -17,7 +16,7 @@ const Footer = () => {
                 </div>
                 <div className='redes'>
                 <i class="bi bi-instagram"></i>
-                    <p>@Botteryeco-bottle</p>
+                    <p>@bottery.ecobottle</p>
                 </div>
                 <div className='redes'>
                 <i class="bi bi-youtube"></i>

@@ -16,7 +16,7 @@
             align-items: center;
             justify-content: center;
             gap: 1rem;
-            margin-right: 4rem;
+            margin-right: 12rem;
             h2{
                 font-size: 1.2rem;
                 color: white;   
@@ -40,6 +40,48 @@
             display: flex;
             gap: 1rem;
             margin-top: 1rem;
+        }
+    }
+}
+
+@media (max-width: 780px) {
+
+    .container-footer{
+        margin-top: 10rem;
+        background-color: $color-primario;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        .footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .logo{
+                text-align: center;
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                margin-right: 2rem;
+            }
+        }
+        .container-redes{
+            .redes{
+                margin-right: 1rem;
+                p{
+                    color: white;
+                    font-family: Future;
+                }
+                i{
+                    font-size: 1.2rem;
+                    color: white;
+                }
+                display: flex;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
         }
     }
 }

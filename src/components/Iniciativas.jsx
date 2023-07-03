@@ -9,7 +9,7 @@ const Iniciativas = () => {
         <section className='container-iniciativa'>
             <div className='iniciativa'>
                     <h2>
-                        INICIATIVAS <span className='verde'>DESTACADAS</span>
+                        INICIATIVAS <span className='verde-titulo'>DESTACADAS</span>
                     </h2>
                 <div className='texto-iniciativa'>
                     <p>Desde su lanzamiento en 2022, Bottery ha evolucionado de ser una ecobotella a convertirse en un <span className='verde'>movimiento global</span> que toma medidas en la lucha contra el plástico.
