@@ -14,6 +14,10 @@
   font-family: FutureHV;
   src: url("./fonts/Futura Heavy font.ttf");
 }
+h2 {
+  color: #373435;
+}
+
 .verde {
   color: #00A859;
   font-weight: bold;
@@ -393,6 +397,8 @@
   text-align: center;
 }
 .container-blog .blog p {
+  font-weight: 400;
+  font-family: Garamond;
   width: 20rem;
   font-size: 1.5rem;
   margin: 1rem;
@@ -731,6 +737,7 @@
   font-family: Garamond;
 }
 .container-premios .premios .info-premios p {
+  font-family: Garamond;
   font-size: 1.5rem;
   text-align: center;
   display: flex;
