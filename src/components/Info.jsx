@@ -5,8 +5,8 @@ const Info = () => {
     <>
     <div className='container-info'>
       <div className='info'>
-        <h2>13.M</h2>
-        <h3>SON LAS <span className='verde'>BOTELLAS DE UN SOLO USO</span> QUE SE TIRAN AÑO EN EL PAÍS</h3>
+        <h2>13 M</h2>
+        <h3>SON LAS <span className='verde'>BOTELLAS DE UN SOLO USO</span> QUE SE TIRAN AL AÑO EN EL PAÍS</h3>
       </div>
       <div className='info'>
         <h2>500</h2>
