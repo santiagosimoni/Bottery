@@ -13,7 +13,7 @@ const Info = () => {
         <h3>SON LOS AÑOS QUE TARDAN EN <span className='verde'>DESAPARECER</span> ESTOS PLÁSTICOS</h3>
       </div>
       <div className='info'>
-        <h2>160</h2>
+        <h2>60</h2>
         <h3><span className='verde'>ECOBOTELLAS</span> HAN ENTRADO EN EL MERCADO</h3>
       </div>
       <div className='borde-verde'></div>
